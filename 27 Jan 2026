@@ -1,0 +1,165 @@
+/*
+//addition
+#include <iostream>
+using namespace std;
+class Addition
+{
+    private:
+    int number1,number2;
+    int sum;
+    public:
+    void getData();
+    void displaySum();
+};
+void Addition::getData(){
+    cout << "enter a no";
+    cin >> number1;
+cout << "enter second number";
+cin >> number2;
+}
+void Addition::displaySum()
+{
+    sum=number1+number2;
+    cout<<"the sum of two number is"<<sum;
+}
+int main(){
+    Addition a1;
+    a1.getData();
+    a1.displaySum();
+    return 0;
+}
+/*
+question 1 average 
+#include <iostream>
+using namespace std;
+class Avera
+{
+    private:
+    int marks1,marks2,marks3;
+    float average;
+    public:
+    void getData();
+    void displayAverage();
+};
+void Avera::getData(){
+    cout<<"enter the marks of first student:";
+    cin>>marks1;
+    cout<<"enter the marks of second student:";
+    cin>>marks2;
+    cout<<"enter the marks of third student:";
+    cin>>marks3;
+};
+void Avera::displayAverage()
+{
+    average=(float)(marks1+marks2+marks3)/3;
+    cout<<"the average is:"<<average;
+};
+int main()
+{
+    Avera a1;
+    a1.getData();
+    a1.displayAverage();
+    return 0;
+}*/
+/*
+question 2
+#include <iostream>
+using namespace std;
+class Area
+{
+    private:
+    int radius;
+    float area;
+    public:
+void getData();
+void displayArea();
+};
+void Area::getData()
+{
+cout<<"enter the radiu:";
+    cin>>radius;
+}
+void Area::displayArea()
+{
+    area=3.14*radius*radius;
+cout<<"the area is:"<<area;
+
+}
+int main(){
+    Area a1;
+    a1.getData();
+    a1.displayArea();
+    return 0;
+    
+}*/
+
+/*
+q3 temperatur conversion
+#include <iostream>
+using namespace std;
+class Temp
+{
+    private:
+    float cel,frah;
+    public:
+    void getData();
+    void displayTemperature();
+};
+void Temp::getData()
+{
+    cout<<"enter the temp in celcius: ";
+    cin>>cel;
+
+} 
+void Temp::displayTemperature()
+{
+    frah=(cel*1.8)+32;
+cout<<" the temp converted is :"<<frah;
+
+}
+int main(){
+    Temp a1;
+    a1.getData();
+    a1.displayTemperature();
+    return 0;
+}
+*/
+/*
+q4
+#include <iostream>
+using namespace std;
+class Bill
+{
+private:
+int mrp,quan,no,amount;
+float discount, sellingprice;
+public:
+void getData();
+void displaytotalbill();
+};
+void Bill::getData()
+{
+  cout<<"enter the item no";
+    cin>>no;
+    cout<<"enter the quantity:";
+    cin>>quan;
+    cout<<"enter the mrp:";
+    cin>>mrp;  
+
+
+}
+void Bill::displaytotalbill()
+{
+    amount=quan*mrp;
+    discount=(20.0f/100.0f)*amount;
+    sellingprice=amount-discount;
+cout <<"the selling price after discount:"<<sellingprice;
+}
+int main()
+{
+    Bill a1;
+    a1.getData();
+    a1.displaytotalbill();
+    return 0;
+}*/
+*/
