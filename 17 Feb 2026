@@ -1,0 +1,66 @@
+/*
+#include<iostream>
+using namespace std;
+class Volumefigure{
+    public:
+    float Volume(float radius,float height){
+        return((3.14*radius*height)/3);
+    }
+    int Volume(int side){
+        return side*side*side;
+    }
+    int Volume(int length,int breadth,int height){
+        return (length*breadth*height);
+    }
+};
+int main(){
+    float Vol_cone;
+int Vol_cube;
+int Vol_cuboid;
+Volumefigure obj;
+Vol_cone=obj.Volume(7.5,4.9);
+Vol_cube=obj.Volume(9);
+Vol_cuboid=obj.Volume(4,5,6);
+cout<<"volume of cone:"<<Vol_cone<<endl; 
+cout<<"volume of cube:"<<Vol_cube<<endl; 
+cout<<"volume of cuboid :"<<Vol_cuboid<<endl;
+return 0;
+}
+*/
+/*
+#include<iostream>
+using namespace std;
+class AreaFigure{
+    public:
+    int Area(int side){
+        return(side*side);
+    }
+    int Area(int length,int breadth){
+        return(length*breadth);
+    }
+};
+int main(){
+    AreaFigure ob;
+    cout<<ob.Area(5)<<endl;
+    cout<<ob.Area(5,9)<<endl;
+    return 0;
+}*/
+/*  print one integer and one flaot using function overloading 
+#include<iostream>
+using namespace std;
+class AreaFigure{
+    public:
+    void Print(int a){
+        cout<<"number is:"<<a<<endl;
+    }
+    void Print(double a){
+        cout<<"number is:"<<a;
+    }
+};
+int main(){
+     AreaFigure a1;
+     a1.Print(6);
+     a1.Print(6.9);
+     return 0;
+}
+     */
