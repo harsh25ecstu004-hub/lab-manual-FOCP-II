@@ -1,0 +1,59 @@
+Hackerearth Questions
+
+#include <iostream>
+#include <cctype>
+using namespace std;
+
+int main() {
+	string S;
+cin>>S;
+for(int i=0;i<S.size();i++){
+	if(S[i]>='a'&& S[i]<='z'){
+		S[i]=toupper(S[i]);
+	}else{
+		S[i]=tolower(S[i])
+	;}
+	cout<<S[i];
+	}
+	
+	return 0;
+	} 
+  #include <iostream>
+using namespace std;
+int main(){
+string S;
+cin>>S;
+int count=0;
+for(int i=0;i<S.size();i++){
+	if(S[i]!=S[S.size()-i-1]){
+		count=1;
+	}}
+	if(count==1){
+		cout<<"No";
+	}else{
+		cout<<"YES";
+	
+	}
+return 0; }
+#include <iostream>
+using namespace std;
+int main() {
+	int N, L;
+	cin>>N>>L;
+	
+	for(int i=0;i<N;i++){
+		int W[N], H[N];
+		cin>>W[i]>>H[i];
+	
+		if(W[i]<L||H[i]<L){
+			cout<<"UPLOAD ANOTHER "<<endl;
+		}else {
+			if(W[i]==L&&H[i]==L){
+			cout<<"ACCEPTED"<<endl;
+		}else{
+			cout<<"CROP IT"<<endl;
+		}
+	}
+	}
+	return 0;
+	}
