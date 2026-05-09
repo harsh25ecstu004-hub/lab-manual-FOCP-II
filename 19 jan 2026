@@ -1,0 +1,94 @@
+/*
+#include <iostream>
+using namespace std;
+int main(){
+    cout<<"Hello World";
+    return 0;
+}*/
+/* sum
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,sum;
+cout<<"enter first nmber: ";
+cin>>a;
+cout<<"\n enter sec number: \n";
+cin>>b;
+sum=a+b;
+cout<<"the sum is: "<<sum;
+
+    return 0;
+}*/
+/*
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,sum;
+    a=10;
+    b=15;
+    sum=a+b;
+    cout<<"the sum of 2 no is "<<sum;
+    return 0;
+}*/
+/*
+#include <iostream>
+using namespace std;
+int main(){
+cout<<"my Name is Nishant Tanwar";
+return 0;
+}*/
+
+/* subtraction 
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,subt;
+    cout<<"enter the first number: ";
+    cin>>a;
+    cout<<"enter the second number: ";
+    cin>>b;
+    subt=a-b;
+    cout<<"enter the subtracion: "<<subt;
+return 0;
+}*/
+/* multiplication
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,mult;
+    cout<<"enter the first number: ";
+    cin>>a;
+    cout<<"enter the second number: ";
+    cin>>b;
+    mult=a*b;
+    cout<<"the multiplication: "<<mult;
+return 0;
+}*/
+
+/* swap using add subtract 
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    a=10;
+    b=7;
+    a=a*b;
+    b=a/b;
+    a=a/b;
+    cout<<"the value of first numbe is:"<<a<<endl; 
+    cout<<"the value of second number is :"<<b<<endl;
+    return 0;
+}*/
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    a=10;
+    b=7;
+    a=b;
+    b=a;
+    cout<<"the value of first numbe is:"<<a;
+    cout<<"the vlue of : "<<b;
+    return 0;
+}
