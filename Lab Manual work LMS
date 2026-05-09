@@ -1,0 +1,154 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+
+int main() {
+    int n;
+    if (!(cin >> n)) return 1;
+    if (isPrime(n)) {
+        cout << "Prime" << endl;
+    } else {
+        cout << "Not Prime" << endl;
+    }
+    return 0;
+}
+
+
+#include <iostream>
+
+void swapByValue(int a, int b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+void swapByReference(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+bool isPrime(int n) {
+    if (n <= 1) {
+        return false;
+    }
+    for (int i = 2; i * i <= n; ++i) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+    int a, b;
+    if (!(std::cin >> a >> b)) {
+        return 1;
+    }
+
+    std::cout << "Prime Check for " << a << ": " << (isPrime(a) ? "True" : "False") << std::endl;
+    std::cout << "Prime Check for " << b << ": " << (isPrime(b) ? "True" : "False") << std::endl;
+
+    std::cout << "Original values: a = " << a << ", b = " << b << std::endl;
+
+    swapByValue(a, b);
+    std::cout << "After swapByValue: a = " << a << ", b = " << b << std::endl;
+
+    swapByReference(a, b);
+    std::cout << "After swapByReference: a = " << a << ", b = " << b << std::endl;
+
+    return 0;
+}
+
+
+
+#include <iostream>
+#include <climits>
+
+void findMinMax(int arr[], int size, int &minVal, int &maxVal) {
+    if (size <= 0) return;
+
+    minVal = INT_MAX;
+    maxVal = INT_MIN;
+
+    for (int i = 0; i < size; ++i) {
+        if (arr[i] < minVal) {
+            minVal = arr[i];
+        }
+        if (arr[i] > maxVal) {
+            maxVal = arr[i];
+        }
+    }
+}
+
+int main() {
+    int N;
+    if (!(std::cin >> N)) return 0;
+
+    int* arr = new int[N];
+    for (int i = 0; i < N; ++i) {
+        std::cin >> arr[i];
+    }
+
+    int minVal, maxVal;
+    findMinMax(arr, N, minVal, maxVal);
+
+    if (N > 0) {
+        std::cout << minVal << " " << maxVal << std::endl;
+    }
+
+    delete[] arr;
+    return 0;
+}
+
+
+
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+double calculateEMI(double P, double R = 0.01, int T = 12) {
+    if (R == 0.0) {
+        return P / T;
+    }
+    double r = R / 12.0;
+    double emi = (P * r * pow(1 + r, T)) / (pow(1 + r, T) - 1);
+    return emi;
+}
+
+int main() {
+    double principal;
+    double rate = 0.01;
+    int tenure = 12;
+
+    // Example 1: Principal only
+    std::cout << "Enter Principal amount: ";
+    if (!(std::cin >> principal)) return 1;
+    std::cout << std::fixed << std::setprecision(2) << calculateEMI(principal) << std::endl;
+return 0;
+}
+#include <iostream>
+
+int digitSum(int n) {
+    if (n == 0) {
+        return 0;
+    } else {
+        return (n % 10) + digitSum(n / 10);
+    }
+}
+
+int main() {
+    int N;
+    std::cin >> N;
+    std::cout << digitSum(N) << std::endl;
+    return 0;
+}
