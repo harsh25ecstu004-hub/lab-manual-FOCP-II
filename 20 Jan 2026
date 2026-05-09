@@ -1,0 +1,101 @@
+ /*  q1 average 
+ #include <iostream>
+ using namespace std;
+ int main(){
+    int marks1, marks2, marks3;
+    float average;
+    cout<<"enter the marks of student1:";
+    cin>>marks1;
+    cout<<"enter the marks of student2:";
+    cin>>marks2;
+    cout<<"enter the marks of student3:";
+    cin>>marks3;
+    average =(float)(marks1+marks2+marks3)/ 3.0;
+    cout<<"the average marks of three students are:"<<average;
+    return 0;
+ }*/
+
+ /*
+#include <iostream>
+using namespace std ;
+int main(){
+    int radius;
+    float area;
+    radius=5;
+area=3.14*radius*radius;
+cout<<"the area of the fountai  is :"<<area;
+return 0;
+}*/
+
+/* q3
+#include <iostream>
+using namespace std;
+int main (){
+    float c, f;
+cout<<"enter the temp in celcius:";
+cin>>c;
+f=(c*1.8)+32;
+cout<<"converted temp in frah:"<<f;
+return 0;
+}*/
+
+/* q4 
+#include <iostream>
+using namespace std;
+int main(){
+    int no,quan,price,amount;
+    float discount, sellingprice;
+    cout<<"enter the item no";
+    cin>>no;
+    cout<<"enter the quantity:";
+    cin>>quan;
+    cout<<"enter the price:";
+    cin>>price;
+amount=quan*price;
+
+discount=(20/100)*amount;
+sellingprice=amount-discount;
+cout <<"the selling price after discount:"<<sellingprice;
+return 0;
+}*/
+
+/*
+q5 swap using multiply and division 
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b;
+    a=10;
+    b=9;
+    a=a*b;
+    b=a/b;
+    a=a/b;
+    cout<<"The value of a is:"<<a<<endl;
+    cout<<"the value of b is:"<<b;
+    return 0;
+}
+*/
+/*
+q6
+#include <iostream>
+using namespace std;
+int main() {
+    int salary;
+    float bonusvalue,netsalary;
+     float bonusrate=0.12;
+    int n;
+    cout<<"enter the numbe of employees:"<<endl;
+    cin>>n;
+
+    for(int i=1; i<=n; i++){
+    cout<<"employee:"<<i<<endl;
+    cout<<"the salary is:"<<endl;
+    cin>>salary;
+    bonusvalue=salary*bonusrate;
+    cout<<"the bonus valueis:"<<bonusvalue<<endl;
+    netsalary=salary+bonusvalue;
+    cout<<"the net of the employee is:"<<netsalary<<endl;
+    
+    }
+    return 0;
+}*/
