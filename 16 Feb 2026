@@ -1,0 +1,102 @@
+/*
+#include<iostream>
+using namespace std;
+class great {
+    int a,b,c;
+    public:
+    void getData(){
+        cin>>a>>b>>c;
+    }
+    void displayGreat(){
+        if(a>b&&a>c){
+            cout<<a<<"is greater";
+        }else if(b>a&&b>c){
+            cout<<b<<"is greater";
+        }else{
+            cout<<c<<"is greater";
+        }
+        
+    }
+};
+int main(){
+    great obj;
+    obj.getData();
+    obj.displayGreat();
+    return 0;
+}*/
+/*
+#include<iostream>
+using namespace std;
+void sum(int a,int b,int c){
+    if(a>b&&a>c){
+        cout<<a;
+    }else if(b>a&&b>c){
+        cout<<b;
+    }else{
+        cout<<c;
+    }
+}
+int main(){
+    int num1,num2,num3;
+    cin>>num1>>num2>>num3;
+    sum(num1,num2,num3);
+    return 0;
+}
+*/
+/*
+#include<iostream>
+using namespace std;
+class circle{
+    int radius;
+    float area;
+    public:
+    float area_circle(){
+        
+        cin>>radius;
+        cout<<radius<<endl;
+        area=3.14*radius*radius;
+        return area;
+    }
+};
+int main(){
+    circle b;
+    float d;
+    d=b.area_circle();
+    cout<<"area is "<<d;
+return 0;
+}*/
+/*
+#include<iostream>
+using namespace std;
+class cal{
+    float a,b;
+    char c;
+    public:
+    void getData(){
+        cout<<"enter the operaor:";
+        cin>>c;
+        cin>>a>>b;
+
+    }
+    void displayData(){
+        if(c=='+'){
+            cout<<a+b;
+
+        }else if(c=='-'){
+            cout<<a-b;
+        }else if(c=='*'){
+            cout<<a*b;
+        }else if(c=='/'){
+            cout<<a/b;
+        }else{
+            cout<<"undefined";
+        }
+    }
+};
+int main()
+{
+    cal obj;
+    obj.getData();
+    obj.displayData();
+    return 0;
+}*/
