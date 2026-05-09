@@ -1,0 +1,46 @@
+/*
+     //volume of cylider and cone using function overloading 
+     #include<iostream>
+     using namespace std;
+     class Vol{
+        public:
+        float Volume(double radius,double height){
+            return((3,14*radius*height)/3);
+        }
+        float Volume(double radius,int height ){
+            return(3.14*radius*radius*height);
+        }
+     };
+     int main(){
+        Vol obj;
+        cout<<obj.Volume(4.5,5.5)<<endl;
+        cout<<obj.Volume(4.5,3)<<endl;
+        return 0;
+     }
+     */
+/*
+     #include<iostream>
+     using namespace std;
+     class Number{
+        public:
+        void Print(int a , int b , int c){
+cout<<a+b+c<<endl;
+        }
+        void Print(int a , int b , double c){
+cout<<a+b+c<<endl;
+        }
+        void    Print(int a ,   double b , double c){
+               cout<<a+b+c<<endl; 
+        }
+        void Print(double a , double b, double c){
+                cout<<a+b+c<<endl;
+        }
+     };
+     int main(){
+        Number a1;
+        a1.Print(3,4,7);
+         a1.Print(3,4,5.6);
+          a1.Print(3,4.5,5.6);
+           a1.Print(2.3,2.3,4.3);
+           return 0;
+     }*/
